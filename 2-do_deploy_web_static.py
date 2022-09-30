@@ -4,14 +4,13 @@ fabric script to distribute an archive to web servers
 ----NEEDS TO REVISIT SCRIPT
 '''
 
-from fabric.operations import local, run, put, sudo
 import os
 from datetime import datetime
-from fabric.api import env, local, put, run, runs_once
+from fabric.api import env, local, put, sudo, run, runs_once
 import re
 
 
-env.hosts = ['34.231.70.64', '34.232.63.200']
+env.hosts = ['35.170.77.32', '34.232.63.200']
 
 def do_pack():
     """Function to compress files in an archive"""
